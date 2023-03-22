@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "1ae072ab-656b-4256-8fe6-c536439ea3ce",
+		"name": "Api_ts_postgre",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17658840"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "Get_user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/user/users",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "insert_user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "firstname",
+									"value": "Tangy",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "Jouvenceau",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/user/users",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Service_tips",
+			"item": []
+		},
+		{
+			"name": "Tips",
+			"item": [
+				{
+					"name": "insert_tips",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "tips",
+									"value": "234",
+									"type": "text"
+								},
+								{
+									"key": "id_restaurantTable",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "id_service",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/tips/tips",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tips",
+								"tips"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
